@@ -18,4 +18,4 @@ before_install:
   
 script:
  # Run tests in Container
-- sudo docker run --rm=true -v `pwd`:/tmp:rw centos:centos${OS_VERSION} /bin/bash -c "bash -xe cat /etc/centos-release"
+- sudo docker run --rm=true -v `pwd`:/tmp:rw centos:centos${OS_VERSION} /bin/bash -c "cat /etc/centos-release"
