@@ -5,4 +5,4 @@ yum install -y https://bintray.com/api/ui/download/lean-delivery/gawk_extended/g
 awk -V
 yum install -y https://bintray.com/api/ui/download/lean-delivery/gawk_extended/gawk-json-1.0.2-1.el6.noarch.rpm
 sleep 5
-awk -f parsers/parsing_java.awk server.log
+awk -f parsers/parsing_java.awk server.log | jq '.'
