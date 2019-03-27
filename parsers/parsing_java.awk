@@ -60,7 +60,6 @@ function java_clean(sourcelog)
     delete logtype[sourcelog]
 }
 
-@include "out_multiline.awk"
-@include "convert_time.awk"
-@include "clear_special_symbols.awk"
-@include "out_json.awk"
+@include "parsers/out_multiline.awk"
+@include "parsers/convert_time.awk"
+@include "parsers/clear_special_symbols.awk"
