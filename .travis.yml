@@ -18,4 +18,4 @@ before_install:
   
 script:
  # Run tests in Container
-- sudo docker run --rm=true -v `pwd`:/awk_test:rw centos:centos${OS_VERSION} /bin/bash -c "bash -xe /awk_test/test/test_inside_docker.sh"
+- sudo docker run --rm=true -v `pwd`:/awk_test:rw centos:centos${OS_VERSION} /bin/bash -c "cd /awk_test && bash -xe test/test_inside_docker.sh"
