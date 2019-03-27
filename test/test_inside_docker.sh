@@ -1,4 +1,4 @@
 #!/bin/bash
 cat /etc/centos-release
-yum install https://bintray.com/api/ui/download/lean-delivery/gawk_extended/gawk_extended/gawk-4.2.1.31-1.el6.x86_64.rpm
+yum install -y https://bintray.com/api/ui/download/lean-delivery/gawk_extended/gawk_extended/gawk-4.2.1.31-1.el6.x86_64.rpm
 awk -V
